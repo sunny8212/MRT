@@ -1,237 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MRT-IITB</title>
-    <link rel="icon" type="image/x-icon" href="./src/img/logo_mrt.png">
-    <link rel="stylesheet" href="./src/css/other/font-awesome.min.css">
-    <link rel="stylesheet" href="./src/css/other/bootstrap.min.css">
-    <link rel="stylesheet" href="./src/css/other/aos.css">
-    <link rel="stylesheet" href="src/css/home.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="./src/img/logo_mrt.png" />
+    <link rel="stylesheet" href="./src/css/other/font-awesome.min.css" />
+    <link rel="stylesheet" href="./src/css/other/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/css/other/aos.css" />
+    <link rel="stylesheet" href="src/css/home.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./src/js/jquery.min.js"></script>
     <script src="./src/js/jquery-3.6.3.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100;300;400;800;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="stylesheet" href="src/css/comp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100;300;400;800;900&family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/comp.css" />
     <style>
-        body {
-            font-family: 'Arial', sans-serif !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            background-color: #f4ece3 !important;
-            color: #4e342e !important;
-            line-height: 1.8 !important;
+          body {
+              font-family: 'Arial', sans-serif !important;
+              margin: 0 !important;
+              padding: 0 !important;
+              background-color: #8e5f18 !important;
+              color: #4e342e !important;
+              line-height: 1.8 !important;
+          }
+
+          .container {
+              max-width: 100% !important;
+              padding: 20px !important;
+              margin: 0 auto !important;
+              text-align: center !important;
+              background: linear-gradient(to bottom, #a1887f, #d7ccc8) !important;
+              border-radius: 15px !important;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
+              overflow: hidden !important;
+          }
+
+          .logo img {
+              width: 200px !important;
+              margin-top: 80px !important;
+          }
+
+          .header {
+              font-size: 28px !important;
+              font-weight: bold !important;
+              margin-bottom: 20px !important;
+              color: #3e2723 !important;
+          }
+
+          .sections {
+          display: flex !important;
+          flex-wrap: wrap !important;
+          justify-content: space-between !important;
+          align-items: center !important;
+          margin: 20px 10px !important;
+          padding: 20px !important;
+          background: linear-gradient(to right, #ffe0b2, #ffccbc) !important;
+          border-radius: 12px !important;
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1) !important;
+          transition: transform 0.3s ease !important;
+      }
+
+      .sections:hover {
+          transform: translateY(-5px) !important;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+      }
+
+          .sections img {
+              max-width: 36% !important;
+              height: auto;
+              border-radius: 10px !important;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+          }
+          .amaran{
+              max-width: 36% !important;
+              height: 300px !important;
+              border-radius: 10px !important;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+          }
+
+          .section-content {
+              max-width: 48% !important;
+              text-align: left !important;
+          }
+
+          .sections h2 {
+              font-size: 22px !important;
+              color: #5d4037 !important;
+          }
+
+          ul {
+              padding: 0 !important;
+          }
+
+          .section li {
+          margin: 10px 0 !important;
+          padding: 15px !important;
+          background-color: #fbe9e7 !important;
+          border: 1px solid #ffccbc !important;
+          border-radius: 8px !important;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+          transition: all 0.3s ease !important;
+          color: #4e342e !important;
+          cursor: pointer;
+          font-weight: 500;
+      }
+
+      .section li:hover {
+          background-color: #ffab91 !important;
+          border-color: #ff7043 !important;
+          transform: scale(1.05) !important;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
         }
 
-        .container {
-            max-width: 100% !important;
-            padding: 20px !important;
-            margin: 0 auto !important;
-            text-align: center !important;
-            background: linear-gradient(to bottom, #a1887f, #d7ccc8) !important;
-            border-radius: 15px !important;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
-            overflow: hidden !important;
-        }
+          @media (max-width: 768px) {
+              .sections {
+                  flex-direction: column !important;
+              }
 
-        .logo img {
-            width: 200px !important;
-            margin-top: 80px !important;
-        }
-
-        .header {
-            font-size: 28px !important;
-            font-weight: bold !important;
-            margin-bottom: 20px !important;
-            color: #3e2723 !important;
-        }
-
-        .sections  {
-            display: flex !important;
-            flex-wrap: wrap !important;
-            justify-content: space-between !important;
-            align-items: center !important;
-            margin: 20px 10px !important;
-            padding: 15px !important;
-            background-color: #efebe9 !important;
-            border-radius: 10px !important;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1) !important;
-        }
-
-        .sections img {
-            max-width: 36% !important;
-            height: auto;
-            border-radius: 10px !important;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
-        }
-        .amaran{
-            max-width: 36% !important;
-            height: 300px !important;
-            border-radius: 10px !important;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
-        }
-
-        .section-content {
-            max-width: 48% !important;
-            text-align: left !important;
-        }
-
-        .sections h2 {
-            font-size: 22px !important;
-            color: #5d4037 !important;
-        }
-
-        ul {
-            padding: 0 !important;
-        }
-
-        .section li {
-            margin: 10px 0 !important;
-            padding: 10px !important;
-            background-color: #d7ccc8 !important;
-            border-radius: 8px !important;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
-            padding-right: 5px;
-        }
-
-        @media (max-width: 768px) {
-            .sections {
-                flex-direction: column !important;
-            }
-
-            .sections img,
-            .section-content {
-                max-width: 100% !important;
-            }
-        }
+              .sections img,
+              .section-content {
+                  max-width: 100% !important;
+              }
+          }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav id="transparent-navbar" class="navbar navbar-expand-lg red-hat-font">
-        <a class="navbar-brand" href="index.html">
-            <img src="./src/img/logo_mrt.png" width="75px">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="hamburger-animated"><span></span><span></span><span></span></div>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto"></ul>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./rovers.html">Rovers</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Subdivisions</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./subdivisions/mech.html">Mechanical</a></li>
-                        <li><a class="dropdown-item" href="./subdivisions/elec.html">Electronics & Software</a></li>
-                        <li><a class="dropdown-item" href="./subdivisions/bio.html">Bioscience</a></li>
-                        <li><a class="dropdown-item" href="./subdivisions/mdm.html">Design and Logistics</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="team2023.html">Teams</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="./comp.html">Competitions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact-us.html">Contact</a>
-                </li>
-            </ul>
+      <a class="navbar-brand" href="index.html">
+        <img src="./src/img/logo_mrt.png" width="75px" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <div class="hamburger-animated">
+          <span></span><span></span><span></span>
         </div>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./rovers.html">Rovers</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              href="#"
+              >Subdivisions</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./subdivisions/mech.html"
+                  >Mechanical</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./subdivisions/elec.html"
+                  >Electronics & Software</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./subdivisions/bio.html"
+                  >Bioscience</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./subdivisions/mdm.html"
+                  >Design and Logistics</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team2023.html">Teams</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./comp.html">Competitions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact-us.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div class="container">
-        <div class="logo">
-            <img src="./src/images/compi/IRCLogo.png" alt="Logo">
-        </div>
-        <div class="header">INTERNATIONAL ROVER CHALLENGE</div>
+      <div class="logo">
+        <img src="./src/images/compi/IRCLogo.png" alt="Logo" />
+      </div>
+      <div class="header">INTERNATIONAL ROVER CHALLENGE</div>
 
-        <div class="sections">
-            <div class="section-content">
-                <h2>What is it?</h2>
-                <ul>
-                    <li>The IRC - "INTERNATIONAL ROVER CHALLENGE" is a worldwide competition that challenges university students to test themselves against the best teams in the world.</li>
-                    <li>The purpose is to encourage some of the best teams to learn about the complications involved in space missions, with the objective of making a rover perform specified missions and operations in Mars-simulated conditions in a one-of-a-kind arena.</li>
-                </ul>
-            </div>
-            
+      <div class="sections">
+        <div class="section-content">
+          <h2>What is it?</h2>
+          <ul>
+            <li>
+              The IRC - "INTERNATIONAL ROVER CHALLENGE" is a worldwide
+              competition that challenges university students to test themselves
+              against the best teams in the world.
+            </li>
+            <li>
+              The purpose is to encourage some of the best teams to learn about
+              the complications involved in space missions, with the objective
+              of making a rover perform specified missions and operations in
+              Mars-simulated conditions in a one-of-a-kind arena.
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <div class="sections">
-            <div class="section-content">
-                <h2>Who organises it?</h2>
-                <ul>
-                    <li>It is an initiative by the SPACE ROBOTICS SOCIETY (SPROS) with the aim to provide an interdisciplinary engineering experience while nurturing both practical and soft skills.</li>
-                    <li>Keeping the SPROS’s aim to build a B.O.L.D. (Brighter, Open, Limitless and Developed) future in focus, they give the participating students a glimpse of an actual space mission.</li>
-                </ul>
-            </div>
+      <div class="sections">
+        <div class="section-content">
+          <h2>Who organises it?</h2>
+          <ul>
+            <li>
+              It is an initiative by the SPACE ROBOTICS SOCIETY (SPROS) with the
+              aim to provide an interdisciplinary engineering experience while
+              nurturing both practical and soft skills.
+            </li>
+            <li>
+              Keeping the SPROS’s aim to build a B.O.L.D. (Brighter, Open,
+              Limitless and Developed) future in focus, they give the
+              participating students a glimpse of an actual space mission.
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <div class="sections">
-            <div class="section-content">
-                <h2>The reach of IRC</h2>
-                <ul>
-                    <li>Since its launch, the IRC has scaled up significantly. Today it has more than 50 teams participating, comprising over 1000 students. This highlights the success of SPROS in its aim through the IRC and hence its widening popularity.</li>
-                    <li>MRT is proud to be competing in such a wide-scale initiative.</li>
-                </ul>
-            </div>
-            <img src="background1-fotor-2024030355421.jpeg" alt="The reach of IRC">
+      <div class="sections">
+        <div class="section-content">
+          <h2>The reach of IRC</h2>
+          <ul>
+            <li>
+              Since its launch, the IRC has scaled up significantly. Today it
+              has more than 50 teams participating, comprising over 1000
+              students. This highlights the success of SPROS in its aim through
+              the IRC and hence its widening popularity.
+            </li>
+            <li>
+              MRT is proud to be competing in such a wide-scale initiative.
+            </li>
+          </ul>
         </div>
+        <img
+          src="background1-fotor-2024030355421.jpeg"
+          alt="The reach of IRC"
+        />
+      </div>
 
-        <div class="sections">
-            <div class="section-content">
-                <h2>Our purpose of participation-
-                </h2>
-                <ul>
-                    <li>We at MRT, IITB work committedly to evolve ourselves in the field of space and competitions like IRC provide us with an excellent opportunity to test our dedication and hard work against some of the best in the world as well as to continue on our journey to become the best.</li>
-                </ul>
-            </div>
-            <img src="irc1.png" alt="Preparation for IRC 2025">
+      <div class="sections">
+        <div class="section-content">
+          <h2>Our purpose of participation-</h2>
+          <ul>
+            <li>
+              We at MRT, IITB work committedly to evolve ourselves in the field
+              of space and competitions like IRC provide us with an excellent
+              opportunity to test our dedication and hard work against some of
+              the best in the world as well as to continue on our journey to
+              become the best.
+            </li>
+          </ul>
         </div>
-        
-        <div class="sections">
-            <div class="section-content">
-                <h2>Preparation for IRC 2025-
-                </h2>
-                <ul>
-                    <li>We are a team of more than 45 students working towards the same goal. Amaran, the latest entrant in our rover family, has emerged as a result of our hard work and sincere efforts over the past year. Amaran has been developed with many upgrades in its design and capabilities, further solidifying our goal of achieving new heights every year.
-                    </li>
-                </ul>
-            </div>
-            <img src="amaran.png" class="amaran" alt="Preparation for IRC 2025">
+        <img src="irc1.png" alt="Preparation for IRC 2025" />
+      </div>
+
+      <div class="sections">
+        <div class="section-content">
+          <h2>Preparation for IRC 2025-</h2>
+          <ul>
+            <li>
+              We are a team of more than 45 students working towards the same
+              goal. Amaran, the latest entrant in our rover family, has emerged
+              as a result of our hard work and sincere efforts over the past
+              year. Amaran has been developed with many upgrades in its design
+              and capabilities, further solidifying our goal of achieving new
+              heights every year.
+            </li>
+          </ul>
         </div>
-        <div class="sections">
-            <img src="irc2.png" alt="Preparation for IRC 2025"><br>
-            <img src="irc3.png" alt="Preparation for IRC 2025">
-        </div>
+        <img src="amaran.png" class="amaran" alt="Preparation for IRC 2025" />
+      </div>
+      <div class="sections">
+        <img src="irc2.png" alt="Preparation for IRC 2025" /><br />
+        <img src="irc3.png" alt="Preparation for IRC 2025" />
+      </div>
     </div>
 
     <script src="./src/js/script.js"></script>
     <script>
-        AOS.init({
-            disable: false,
-            offset: 80,
-            duration: 1000,
-        });
+      AOS.init({
+        disable: false,
+        offset: 80,
+        duration: 1000,
+      });
     </script>
-</body>
-
+  </body>
 </html>
